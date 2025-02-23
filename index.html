@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Platform</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-color: #007bff;
+            color: white;
+            padding: 32px;
+            text-align: center;
+        }
+        .container {
+            padding: 16px;
+        }
+        .featured-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 16px;
+            padding: 16px;
+            width: calc(33% - 32px);
+            transition: box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .product-card h3 {
+            margin: 16px 0 8px;
+        }
+        .product-card p {
+            margin: 0 0 16px;
+        }
+        .product-card button {
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .product-card button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our E-commerce Platform</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product_listing.html">Product Listing</a>
+        <a href="shopping_cart.html">Shopping Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="user_profile.html">User Profile</a>
+        <a href="order_history.html">Order History</a>
+        <a href="login_register.html">Login/Register</a>
+        <a href="search_results.html">Search Results</a>
+        <a href="customer_support.html">Customer Support</a>
+    </nav>
+    <div class="hero">
+        <h2>Discover Amazing Products</h2>
+        <p>Find the best deals and offers on our platform.</p>
+    </div>
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="featured-products">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>High-quality product with great features.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Top-rated product with excellent reviews.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Best-selling product with amazing discounts.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 E-commerce Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
